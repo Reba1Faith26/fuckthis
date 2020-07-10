@@ -1,0 +1,134 @@
+@media screen and (max-width:500px){
+    .wrapper{
+        display:grid;
+        grid-template-columns:repeat(1,1fr);
+        row-gap:20px;
+        grid-template-areas:
+        "navigation"
+        "menu-wrapper"
+        "present-wrapper"
+        "section"
+        "main"
+        "jersey-caption"
+        "jersey"
+        "delivery";
+    }
+    main{
+        display:grid;
+        row-gap:20px;
+        grid-template-columns: repeat(2,1fr);
+        grid-area:main;
+    }
+    .navigation{
+        grid-area:navigation;
+        font-family:arial;
+        border-bottom:solid 1px black;
+    }
+    .menu{
+        grid-area:menu-wrapper;
+        margin-top:-25px;
+    }
+    section{
+        grid-area:section;
+        background-color: #EEEEEE;
+        justify-items: auto;
+        font-family:arial;
+    }
+    .footer{
+        grid-area:footer;
+        background-color:#87c8ce;
+        margin-top:20px;
+        height:190px;
+        text-align:Center;
+        font-family:arial;
+        font-weight:bolder;
+        font-size:20px;
+    }
+    .menu-wrapper{
+        display:none;
+        position: absolute;
+        background-color: black;
+        height:100%;
+        left:0;
+        right:0;
+    }
+    .jersey1,.jersey2,.jersey3,.jersey4,.jersey5{
+        height:150px;
+    }
+    .jerseyspe{
+        height:120px;
+    }
+    .jerseys{
+        grid-area:jersey;
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        column-gap:30px;
+        row-gap:10px;
+    }
+    .delivery{
+        display:grid;
+        font-weight:bold;
+        font-family:Arial;
+        grid-area:delivery;
+    }
+    .del2{
+        font-weight:800;
+        margin-top:10px;
+        text-align:Center;
+    }
+    .del1{
+        text-align:center;
+    }
+    .jerseyCaption{
+        display:grid;
+        grid-area:jersey-caption;
+        font-weight:bolder;
+        background-color:#d5cfcf;
+        font-family:arial;
+    }
+    .image1,.image2,.image3,.image4{
+        height:150px;
+       
+    }
+    .fourh{
+        margin-top:0px;
+        font-weight:bolder;
+        font-family:Arial;
+    }
+    .present{
+        height:390px;
+    }
+    .presentWrapper{
+        grid-area:present-wrapper;
+        display:grid;
+    }
+    .menu-btn{
+        height:30px;
+        float:right;
+        margin-top:-46px;
+    }
+    .navCaption{
+        text-align:Center;
+        margin-top:10px;
+    }
+    p{
+        font-weight:bolder;
+        font-family:arial;
+        margin-top:-15px;
+    }
+    .price1,.price2,.price3,.price4{
+        margin-top:-30px;
+    }
+    div ul li{
+        font-weight:bolder;
+        font-family:Arial;
+        list-style:none;
+        line-height:70px;
+        text-align:center;
+        font-size:30px;
+    }
+    div ul li a{
+        color:rgb(255, 255, 255);
+        text-decoration:none;
+    }
+}
